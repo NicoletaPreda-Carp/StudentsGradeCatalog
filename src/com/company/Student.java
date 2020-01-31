@@ -15,8 +15,7 @@ public class Student {
     }
 
     public double calculateAverage () {
-        double average = (this.gradeEnglish + this.gradeMath + this.gradeSport) / 3;
-        return average;
+        return (this.gradeEnglish + this.gradeMath + this.gradeSport) / 3;
     }
 
 

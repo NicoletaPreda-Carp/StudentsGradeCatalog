@@ -15,6 +15,14 @@ public class Main {
 	setRandomMarks(marryF);
 	setRandomMarks(marryN);
 
+	double avaregeForJhon = jhon.calculateAverage();
+	System.out.println("The average for " + jhon.get_name() + " "+ jhon.get_surname() + " is: " + avaregeForJhon);
+	double avaregeForKille = kille.calculateAverage();
+	System.out.println("The average for " + kille.get_name() + " "+ kille.get_surname() + " is: " + avaregeForKille);
+	double avaregeForMarryF = marryF.calculateAverage();
+	System.out.println("The average for " + marryF.get_name() + " "+ marryF.get_surname() + " is: " + avaregeForMarryF);
+	double avaregeForMarryN = marryN.calculateAverage();
+	System.out.println("The average for " + marryN.get_name() + " "+ marryN.get_surname() + " is: " + avaregeForMarryN);
 	}
 
     public static void setRandomMarks (Student student) {

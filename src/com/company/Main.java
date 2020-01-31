@@ -19,9 +19,9 @@ public class Main {
 
     public static void setRandomMarks (Student student) {
 		Random random = new Random();
-		student.setGradeEnglish(random.nextInt(10-1)-1);
-		student.setGradeMath(random.nextInt(10-1)-1);
-		student.setGradeSport(random.nextInt(10-1)-1);
+		student.setGradeEnglish(random.nextInt(10));
+		student.setGradeMath(random.nextInt(10));
+		student.setGradeSport(random.nextInt(10));
 	}
 
 

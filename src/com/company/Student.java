@@ -14,6 +14,11 @@ public class Student {
         age = this.age;
     }
 
+    public double calculateAverage () {
+        double average = (this.gradeEnglish + this.gradeMath + this.gradeSport) / 3;
+        return average;
+    }
+
 
 
     public String getName() {

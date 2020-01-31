@@ -29,6 +29,7 @@ public class Main {
 	displayAverageGrades(marryN);
 
 	displayAverageAge(classMembers);
+	displayClassAverage(classMembers);
 	}
 
 	private static void displayAverageGrades(Student student) {
@@ -49,6 +50,14 @@ public class Main {
 			sumOfAges += students.get(i).get_age();
 		}
 		System.out.println("Average class age: " + (double) sumOfAges / students.size());
+	}
+
+	private static void displayClassAverage (ArrayList<Student> students) {
+    	int sumOfAverages = 0;
+    	for (int i = 0; i<students.size(); i++) {
+    		sumOfAverages += students.get(i).calculateAverage();
+		}
+    	System.out.println("Average class grades is: " + (double) sumOfAverages/students.size());
 	}
 
 

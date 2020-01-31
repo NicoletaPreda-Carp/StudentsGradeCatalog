@@ -30,6 +30,8 @@ public class Main {
 
 	displayAverageAge(classMembers);
 	displayClassAverage(classMembers);
+
+	topStudents(classMembers);
 	}
 
 	private static void displayAverageGrades(Student student) {
@@ -60,6 +62,31 @@ public class Main {
     	System.out.println("Average class grades is: " + (double) sumOfAverages/students.size());
 	}
 
+	private static void topStudents (ArrayList<Student> students) {
+
+		System.out.println("Ordered students by average grades:");
+
+		BubbleSortArrayList(students);
+
+		for (Student student : students) {
+			System.out.println(student.get_name() + " " + student.get_surname());
+		}
+	}
+
+	// Bubble Sort example using an array list object
+	private static void BubbleSortArrayList(ArrayList<Student> students) {
+		for (int i = 0; i<students.size() - 1; i++) {
+			for (int j = 0; j<students.size() - i - 1; j++) {
+				// Condition to sort
+				if (students.get(j).calculateAverage() < students.get(j+1).calculateAverage()) {
+					// Swapping 2 adjacent values
+					Student tempStudent = students.get(j);
+					students.set(j, students.get(j+1));
+					students.set(j+1, tempStudent);
+				}
+			}
+		}
+	}
 
 
 }

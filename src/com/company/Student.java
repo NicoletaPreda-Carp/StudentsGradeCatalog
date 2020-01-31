@@ -1,45 +1,45 @@
 package com.company;
 
 public class Student {
-    private String name;
-    private String surname;
-    private int age;
+    private String _name;
+    private String _surname;
+    private int _age;
     private int gradeMath;
     private int gradeEnglish;
     private int gradeSport;
 
     public Student (String name, String surname, int age) {
-        name = this.name;
-        surname = this.surname;
-        age = this.age;
+        this._name = name;
+        this._surname = surname;
+        this._age = age;
     }
 
     public double calculateAverage () {
         return (double)(this.gradeEnglish + this.gradeMath + this.gradeSport) / 3;
     }
 
-    public String getName() {
-        return name;
+    public String get_name() {
+        return _name;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void set_name(String _name) {
+        this._name = _name;
     }
 
-    public String getSurname() {
-        return surname;
+    public String get_surname() {
+        return _surname;
     }
 
-    public void setSurname(String surname) {
-        this.surname = surname;
+    public void set_surname(String _surname) {
+        this._surname = _surname;
     }
 
-    public int getAge() {
-        return age;
+    public int get_age() {
+        return _age;
     }
 
-    public void setAge(int age) {
-        this.age = age;
+    public void set_age(int _age) {
+        this._age = _age;
     }
 
     public int getGradeMath() {

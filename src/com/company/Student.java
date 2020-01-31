@@ -18,8 +18,6 @@ public class Student {
         return (this.gradeEnglish + this.gradeMath + this.gradeSport) / 3;
     }
 
-
-
     public String getName() {
         return name;
     }
